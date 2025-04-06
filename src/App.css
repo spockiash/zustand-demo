@@ -88,3 +88,59 @@
   flex-grow: 1;
   padding: 2rem;
 }
+
+.comparison-table-container {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.comparison-table tr:hover {
+  background-color: #333333;
+}
+
+@media (prefers-color-scheme: light) {
+  .comparison-table {
+    background-color: #ffffff;
+    color: #213547;
+    border-color: #ccc;
+  }
+
+  .comparison-table th {
+    background-color: #f0f0f0;
+    color: #213547;
+  }
+
+  .comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .comparison-table tr:hover {
+    background-color: #efefef;
+  }
+}
