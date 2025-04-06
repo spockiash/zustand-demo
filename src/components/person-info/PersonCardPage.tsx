@@ -1,6 +1,6 @@
 // src/components/PersonCardPage.tsx
 import { usePersonStore } from '../../store/person-info/personStore.ts'
-import PersonInfo from './PersonInfo.tsx'
+import { PersonInfo } from "./PersonInfo.tsx"
 import AddressInfo from './AddressInfo.tsx'
 
 export default function PersonCardPage() {

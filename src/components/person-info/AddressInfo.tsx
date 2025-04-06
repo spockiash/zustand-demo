@@ -4,10 +4,10 @@ import { usePersonStore } from '../../store/person-info/personStore.ts'
 export default function AddressInfo() {
   const address = usePersonStore((state) => state.address)
 
-  if (!address) return <div className="panel">No address loaded.</div>
+  if (!address) return <div className="panel panel-person-info">No address loaded.</div>
 
   return (
-    <div className="panel">
+    <div className="panel panel-person-info">
       <h3>Address</h3>
       <p>{address.street} ({address.buildingNumber})</p>
       <p>{address.streetName}</p>
