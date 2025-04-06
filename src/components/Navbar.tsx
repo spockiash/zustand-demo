@@ -23,6 +23,7 @@ export default function Navbar() {
                 <ul className="navbar-menu">
                 <li><a href="#" onClick={() => navigate('counter')}>Counter</a></li>
                 <li><a href="#" onClick={() => navigate('compare')}>Zustand vs</a></li>
+                <li><a href="#" onClick={() => navigate('person')}>Person</a></li>
                 </ul>
             )}
         </nav>
