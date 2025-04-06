@@ -5,21 +5,21 @@ export default function Navbar() {
     const toggle = useNavbar((state) => state.toggle)
 
     return (
-        <nav className="navbar">
-        <div className="navbar-header">
-            <h2>My App</h2>
-            <button type="button" onClick={toggle}>
-            {isOpen ? '<<<' : '>>>'}
-            </button>
-        </div>
+        <nav className={`navbar ${isOpen ? 'open' : 'collapsed'}`}>
+            <div className="navbar-header">
+                <h2 className="navbar-title">My App</h2>
+                <button type="button" onClick={toggle}>
+                {isOpen ? '<<<' : '>>>'}
+                </button>
+            </div>
 
-        {isOpen && (
-            <ul className="navbar-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
-        )}
+            {isOpen && (
+                <ul className="navbar-menu">
+                <li><a href="#">Counter</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            )}
         </nav>
   )
 }
