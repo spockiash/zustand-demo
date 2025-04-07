@@ -2,6 +2,7 @@ import './App.css'
 import CounterPage from "./components/CounterPage.tsx";
 import Navbar from './components/Navbar.tsx'
 import ComparisonPage from './components/ComparisonPage.tsx'
+import PersonCardPage from './components/person-info/PersonCardPage.tsx'
 import { navigationStore } from "./store/navigation.ts";
 import { useCounter } from "./store/counter.ts"
 import { useStore } from "zustand";
@@ -17,6 +18,8 @@ function App() {
         return <CounterPage />
       case 'compare':
         return <ComparisonPage />
+      case 'person':
+        return <PersonCardPage />
       default:
         return <CounterPage />
     }

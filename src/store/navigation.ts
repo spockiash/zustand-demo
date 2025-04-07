@@ -1,7 +1,7 @@
 // src/store/navigation.ts
 import { createStore } from "zustand/vanilla";
 
-export type Page = 'counter' | 'compare' 
+export type Page = 'counter' | 'compare' | `person`
 
 type NavigationStore = { 
     currentPage: Page
