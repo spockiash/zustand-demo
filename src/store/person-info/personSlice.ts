@@ -11,10 +11,12 @@ export type Person = {
   
   export type PersonSlice = {
     person: Person | null
+    isAdult: boolean
     setPerson: (p: Person) => void
   }
   
   export const createPersonSlice = (set: (arg0: { person: Person; }) => void): PersonSlice => ({
     person: null,
+    isAdult: false,
     setPerson: (person) => set({ person }),
   })
